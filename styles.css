@@ -1,79 +1,95 @@
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
-  padding: 0;
-  background: #f8f9fa;
+  background: #f4f7fa;
   color: #333;
 }
 
-header {
-  background: #1a1a1a;
+header, footer {
+  background: linear-gradient(90deg, #004e92, #000428);
   color: #fff;
-  padding: 1rem;
+  padding: 20px;
   text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-.top-banner {
-  font-size: 1.2rem;
+.region-top_banner {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
   font-weight: 600;
 }
 
-.logo {
-  margin: 1rem 0;
-}
-
-#menu-toggle {
+#mobile-menu-toggle {
   display: none;
-  background: #444;
-  color: white;
-  padding: 0.5rem 1rem;
+  background-color: #fff;
   border: none;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+  cursor: pointer;
 }
 
-#main-nav {
-  margin-top: 1rem;
+main {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  padding: 20px;
+  gap: 20px;
 }
 
-.layout {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 1rem;
+aside {
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
-.left-sidebar {
-  flex: 1;
-  min-width: 200px;
-  background: #eee;
-  padding: 1rem;
-}
-
-.content {
-  flex: 3;
-  padding: 1rem;
+section.region-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
 footer {
-  background: #222;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
+  font-size: 0.9rem;
 }
 
 @media (max-width: 768px) {
-  .layout {
-    flex-direction: column;
+  main {
+    grid-template-columns: 1fr;
   }
 
-  #menu-toggle {
+  #mobile-menu-toggle {
     display: inline-block;
   }
 
-  #main-nav {
+  nav {
     display: none;
   }
 
-  #main-nav.active {
+  nav.active {
     display: block;
+    margin-top: 10px;
   }
 }

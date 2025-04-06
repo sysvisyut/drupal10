@@ -1,9 +1,12 @@
-name: 'Your Theme'
+name: 'Your Enhanced Custom Theme'
 type: theme
-description: 'A stunning, responsive Drupal 10 theme.'
+description: 'A visually appealing, responsive custom theme with modern features for Drupal 10.'
 core_version_requirement: ^10
 base theme: false
 package: Custom
+themes:
+  - css/style.css
+  - js/script.js
 libraries:
   - your_theme/global-styling
 regions:

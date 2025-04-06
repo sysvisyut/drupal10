@@ -1,0 +1,15 @@
+name: 'Your Theme'
+type: theme
+description: 'A stunning, responsive Drupal 10 theme.'
+core_version_requirement: ^10
+base theme: false
+package: Custom
+libraries:
+  - your_theme/global-styling
+regions:
+  top_banner: 'Top Banner'
+  logo: 'Logo'
+  navigation: 'Navigation Menu'
+  left_sidebar: 'Left Sidebar'
+  content: 'Content'
+  footer: 'Footer'
